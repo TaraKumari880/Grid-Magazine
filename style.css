@@ -1,0 +1,167 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: 'Baskervville', serif;
+    color: linen;
+    background-color: rgb(20, 30, 40);
+}
+main {
+    display: grid;
+    grid-template-columns: minmax(2rem, 1fr) minmax(min-content, 94rem) minmax(2rem, 1fr);
+    row-gap: 3rem;
+}
+section {
+    display: block;
+}
+.heading {
+    grid-column: 2 / 3;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 1.5rem;
+}
+.page {
+    grid-column: 1 / -1;
+    position: relative;
+}
+
+header {
+    display: block;
+}
+img {
+    width: 100%;
+    object-fit: cover;
+}
+img {
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+.title {
+    text-align: center;
+    color: rgb(42, 163, 171);
+    font-size: 8rem;
+}
+
+h1 {
+    font-family: 'Anton', sans-serif;
+}
+.subtitle {
+    font-size: 2.4rem;
+    color: rgb(42, 163, 171);
+    text-align: center;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+.director {
+    font-size: 2rem;
+    font-family: "Raleway", sans-serif;
+}
+a {
+    text-decoration: none;
+    color: linen;
+}
+.date {
+    color: rgba(255, 255, 255, 0.5);
+}
+.icons {
+    display: grid;
+    font-size: 3rem;
+    grid-template-columns: repeat(5, 1fr);
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+    align-items: center;
+}
+.page2 {
+    grid-column: 2 / 3;
+    font-size: 1.8rem;
+    letter-spacing: 0.6px;
+    column-width: 25rem;
+    text-align: justify;
+}
+.text::first-letter {
+    font-size: 6rem;
+    color: rgb(42, 163, 171);
+    float: left;
+    margin-right: 1rem;
+}
+blockquote {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 40px;
+    margin-inline-end: 40px;
+}
+.quote {
+    color: #6acb87;
+    font-size: 2.4rem;
+    text-align: center;
+    font-family: "Raleway", sans-serif;
+}
+
+.page2-with-images {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 3rem;
+    margin-bottom: 3rem;
+    
+}
+article {
+    display: block;
+}
+
+.lists-title, .lists-subtitle {
+    color:orangered;
+}
+.list {
+    list-style-type: none;
+    margin-top: 2rem;
+}
+
+ul {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+.list li {
+    margin-bottom: 1.5rem;
+}
+h3, h4 {
+    font-family: 'Raleway', sans-serif;
+}
+h3 {
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+h4 {
+    display: block;
+    margin-block-start: 1.33em;
+    margin-block-end: 1.33em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+.image-wrapper {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: repeat(3, min-content);
+    gap: 2rem;
+    place-items: center;
+}
+.image-1, .image-3 {
+    grid-column: 1 / -1;
+}
